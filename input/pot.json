@@ -1,0 +1,56 @@
+{
+"parts": [
+{
+"part_name": "Pot Body",
+"color": "Light Blue",
+"function_description": "Acts as the main container for cooking and holding food or liquids.",
+"topology_type": "Hollow_One_Opening"
+},
+{
+"part_name": "Lid",
+"color": "Pink",
+"function_description": "Covers the top opening to retain heat and moisture during cooking.",
+"topology_type": "Solid"
+},
+{
+"part_name": "Left Handle",
+"color": "Light Green",
+"function_description": "Provides a safe, insulated grip for lifting and moving the pot.",
+"topology_type": "Solid"
+},
+{
+"part_name": "Right Handle",
+"color": "Purple",
+"function_description": "Provides a secondary grip for balanced lifting and moving of the pot.",
+"topology_type": "Solid"
+},
+{
+"part_name": "Lid Handle",
+"color": "Yellow",
+"function_description": "Allows the user to safely lift and remove the hot lid.",
+"topology_type": "Solid"
+}
+],
+"adjacency_graph": [
+{
+"source_part": "Left Handle",
+"target_part": "Pot Body",
+"relationship_type": "Connect"
+},
+{
+"source_part": "Right Handle",
+"target_part": "Pot Body",
+"relationship_type": "Connect"
+},
+{
+"source_part": "Lid",
+"target_part": "Pot Body",
+"relationship_type": "Contact"
+},
+{
+"source_part": "Lid Handle",
+"target_part": "Lid",
+"relationship_type": "Connect"
+}
+]
+}

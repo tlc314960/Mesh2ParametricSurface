@@ -1,0 +1,56 @@
+{
+"parts": [
+{
+"part_name": "Teapot Body",
+"color": "Light Blue",
+"function_description": "Acts as the primary container for brewing and holding liquids.",
+"topology_type": "Hollow_One_Opening"
+},
+{
+"part_name": "Handle",
+"color": "Purple",
+"function_description": "Provides a safe, insulated grip for lifting and pouring.",
+"topology_type": "Solid"
+},
+{
+"part_name": "Spout",
+"color": "Yellow",
+"function_description": "Channels the liquid out of the body for controlled pouring.",
+"topology_type": "Hollow_Two_Openings"
+},
+{
+"part_name": "Lid",
+"color": "Pink",
+"function_description": "Covers the top opening to retain heat and prevent spilling.",
+"topology_type": "Solid"
+},
+{
+"part_name": "Knob",
+"color": "Light Green",
+"function_description": "Provides a small handle to safely lift and remove the lid.",
+"topology_type": "Solid"
+}
+],
+"adjacency_graph": [
+{
+"source_part": "Handle",
+"target_part": "Teapot Body",
+"relationship_type": "Connect"
+},
+{
+"source_part": "Spout",
+"target_part": "Teapot Body",
+"relationship_type": "Penetrate"
+},
+{
+"source_part": "Lid",
+"target_part": "Teapot Body",
+"relationship_type": "Contact"
+},
+{
+"source_part": "Knob",
+"target_part": "Lid",
+"relationship_type": "Connect"
+}
+]
+}

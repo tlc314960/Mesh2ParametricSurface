@@ -1,0 +1,32 @@
+Role: You are an expert in 3D geometry, topology, and functional object analysis.
+Task: Analyze the provided multi-view image of a segmented 3D model. Each functional part of the model is visually distinct (typically represented by a different color or distinct physical boundaries). Based on visual inspection, extract the functional and topological properties of each part, and map the physical relationships (adjacency graph) between them.
+Please output the result STRICTLY as a JSON object matching the following structure. Do not include any markdown formatting outside the JSON block.
+{
+  "parts": [
+    {
+      "part_name": "String (e.g., Mug Body, Handle, Lid, Spoon)",
+      "color": "String (Identify the part's dominant color in the image)",
+      "function_description": "String (Describe the practical purpose of this part)",
+      "topology_type": "String (Must be one of: 'Solid', 'Shell', 'Hollow_Two_Openings', 'Hollow_One_Opening')"
+    }
+  ],
+  "adjacency_graph": [
+    {
+      "source_part": "String (Name of the first part)",
+      "target_part": "String (Name of the second part)",
+      "relationship_type": "String (Must be one of: 'Contact', 'Connect', 'Penetrate')"
+    }
+  ]
+}
+Definitions for Topology Types:
+
+Solid: Completely filled geometry without internal cavities (e.g., a solid handle or a spoon).
+Shell: A thin-walled, completely enclosed hollow geometry.
+Hollow_Two_Openings: A hollow structure open at two distinct ends (e.g., a teapot spout or a pipe).
+Hollow_One_Opening: A container-like hollow structure open at only one end (e.g., a mug body, a cup, or a bowl).
+Definitions for Relationship Types:
+
+Contact: Parts visually touch or rest against each other but are not fused, implying they can easily separate (e.g., a lid resting on a mug body).
+Connect: Parts are physically joined, fused, or permanently attached (e.g., a handle attached to a mug body).
+Penetrate: One part goes through or is inserted into another's space/opening (e.g., a spout embedded into a body).
+Note on relationships: Please capture all visible connections. If part A touches part B, you only need to define the relationship once (A to B).
