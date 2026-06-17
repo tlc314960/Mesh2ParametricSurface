@@ -8,6 +8,10 @@
 | `generalized_cylinder`（扫掠管） | 弯曲中心线 + 截面 | `spout`、`handle` | 中心线 + 横截面环 |
 | `surface_of_revolution`（旋转面） | 直轴 + 母线 `r(h)` | `teapot_body`、`lid`、`knob` | 旋转轴 + 母线 + 切片环 |
 
+> 详细技术参考见 [`docs/`](docs/README.md)：
+> [管线与模块](docs/pipeline.md) · [扫掠管](docs/swept_tube.md) ·
+> [旋转面](docs/revolve_surface.md) · [参数与结果](docs/params_and_results.md)。
+
 ## 设计前提
 
 输入是 CGAL alpha-wrap 的逐零件网格（`input/alpha_wrapping_per_part/part_*_wrapped.obj`，约 500 顶点），
