@@ -1,0 +1,17 @@
+# Python virtual environment (recreate with uv, see README)
+.venv/
+venv/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipython/
+.ipynb_checkpoints/
+
+# OS / editor cruft
+.DS_Store
+
+# Generated fitting artifacts (regenerate via scripts/run_all_parts.py)
+output/
+/tmp/

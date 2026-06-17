@@ -78,12 +78,11 @@ output/
 
 ## 运行
 
-环境（uv，**不要 conda**）：
+环境（uv，**不要 conda**），依赖清单见 `requirements.txt`：
 
 ```bash
 uv venv --python 3.11 .venv
-uv pip install --python .venv/bin/python \
-    numpy scipy trimesh matplotlib scikit-learn plotly ipywidgets ipykernel nbconvert pandas
+uv pip install --python .venv/bin/python -r requirements.txt
 ```
 
 单零件：

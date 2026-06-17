@@ -90,15 +90,26 @@ output/
 `params.json` 带 `proxy_type` 字段：扫掠管含端点、中心线 B 样条控制点、各横截面参数；
 旋转面含轴 `{origin, direction, u, v, h_range}`、母线 `{h, r}`、逐切片诊断。
 
-## 使用
+## 安装
 
-环境用 **uv**（不是 conda），在项目目录下创建 `.venv`：
+需要 Python 3.10+（开发用 3.11）。环境用 **uv**（不是 conda），在项目目录下创建 `.venv`：
 
 ```bash
+# 1. 克隆
+git clone https://github.com/tlc314960/Mesh2ParametricSurface.git
+cd Mesh2ParametricSurface
+
+# 2. 建虚拟环境并装依赖（依赖清单见 requirements.txt）
 uv venv --python 3.11 .venv
-uv pip install --python .venv/bin/python \
-    numpy scipy trimesh matplotlib scikit-learn plotly ipywidgets ipykernel nbconvert pandas
+uv pip install --python .venv/bin/python -r requirements.txt
+
+# 3. 自检：拟合全部零件
+.venv/bin/python scripts/run_all_parts.py --input input --output output
 ```
+
+> 没有 uv 时也可用标准 venv：`python -m venv .venv && .venv/bin/pip install -r requirements.txt`。
+
+## 使用
 
 拟合单个零件（`--proxy-type auto` 按零件名自动选型）：
 
@@ -122,7 +133,12 @@ uv pip install --python .venv/bin/python \
 `notebooks/visualize_spout_proxy.ipynb`（plotly）。设置 `PART` 切换零件查看单零件细节，
 底部「All parts」对 `output/` 下每个零件渲染组合视图 + 可靠度视图 + 指标总表。
 notebook 会按 `proxy_type` 自动切换图层（扫掠管显示中心线/横截面/端点；旋转面显示轴/母线/切片环）。
-内核：`m2ps-venv`（`.venv`）。
+
+先把 `.venv` 注册为 Jupyter 内核 `m2ps-venv`，再在该内核下运行 notebook：
+
+```bash
+.venv/bin/python -m ipykernel install --user --name m2ps-venv --display-name "Python 3 (.venv)"
+```
 
 ## 当前结果
 
