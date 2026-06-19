@@ -1,6 +1,7 @@
 # Python virtual environment (recreate with uv, see README)
 .venv/
 venv/
+*venv*/
 
 # Python caches
 __pycache__/
