@@ -1,0 +1,1412 @@
+{
+  "description": "Mapping from original AI-generated FBX mesh objects to canonical pipeline part names. Edit canonical_part_name only if an automatic match is incorrect, then rerun with appropriately named source data.",
+  "fbx_path": "input/TeportParts.fbx",
+  "alpha_wrap_directory": "input/alpha_wrapping_per_part",
+  "parts": [
+    {
+      "original_fbx_object_name": "part_0",
+      "mesh_data_name": "part_0",
+      "parent_name": null,
+      "material_names": [],
+      "canonical_part_name": "lid",
+      "match_method": "numeric_index",
+      "exported_ply_path": "input/original_parts_ply/part_0_Lid_original.ply",
+      "matched_alpha_wrapped_mesh_path": "input/alpha_wrapping_per_part/part_0_Lid_wrapped.obj",
+      "source_fbx": {
+        "vertex_count": 4032,
+        "polygon_count": 8064,
+        "evaluated_vertex_count": 4032,
+        "evaluated_triangle_count": 8064,
+        "non_triangular_faces_before_export": 0,
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            4.371138828673793e-08,
+            0.0
+          ],
+          [
+            0.0,
+            -4.371138828673793e-08,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "matrix_world_determinant": 1.0,
+        "world_bounds": {
+          "min": [
+            -0.19156737625598907,
+            -0.20711247622966766,
+            0.48531779646873474
+          ],
+          "max": [
+            0.22832737863063812,
+            0.2099856436252594,
+            0.5490756630897522
+          ]
+        }
+      },
+      "exported_mesh": {
+        "vertex_count": 4032,
+        "face_count": 8064,
+        "bounds": {
+          "min": [
+            -0.19156737625598907,
+            -0.20711247622966766,
+            0.48531779646873474
+          ],
+          "max": [
+            0.22832737863063812,
+            0.2099856287240982,
+            0.5490756630897522
+          ]
+        },
+        "extents": [
+          0.4198947548866272,
+          0.41709810495376587,
+          0.06375786662101746
+        ],
+        "bbox_diagonal": 0.5952709466229532,
+        "centroid": [
+          0.017432937802416046,
+          0.001960713559172605,
+          0.5182721079400014
+        ],
+        "bbox_center": [
+          0.018380001187324524,
+          0.001436576247215271,
+          0.5171967297792435
+        ]
+      },
+      "topology_and_normals": {
+        "component_count": 1,
+        "component_face_counts": [
+          8064
+        ],
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume": 0.0029594850166734746,
+        "boundary_edge_count": 0,
+        "nonmanifold_edge_count": 0,
+        "face_normals_finite": true,
+        "vertex_normals_finite": true,
+        "mean_face_normal_length": 1.0,
+        "mean_vertex_normal_length": 1.0
+      },
+      "cleanup": {
+        "before": {
+          "vertex_count": 4032,
+          "face_count": 8064,
+          "bounds": {
+            "min": [
+              -0.19156737625598907,
+              -0.20711247622966766,
+              0.48531779646873474
+            ],
+            "max": [
+              0.22832737863063812,
+              0.2099856287240982,
+              0.5490756630897522
+            ]
+          },
+          "extents": [
+            0.4198947548866272,
+            0.41709810495376587,
+            0.06375786662101746
+          ],
+          "bbox_diagonal": 0.5952709466229532,
+          "centroid": [
+            0.017432937802416046,
+            0.001960713559172605,
+            0.5182721079400014
+          ],
+          "bbox_center": [
+            0.018380001187324524,
+            0.001436576247215271,
+            0.5171967297792435
+          ]
+        },
+        "before_component_count": 1,
+        "after": {
+          "vertex_count": 4032,
+          "face_count": 8064,
+          "bounds": {
+            "min": [
+              -0.19156737625598907,
+              -0.20711247622966766,
+              0.48531779646873474
+            ],
+            "max": [
+              0.22832737863063812,
+              0.2099856287240982,
+              0.5490756630897522
+            ]
+          },
+          "extents": [
+            0.4198947548866272,
+            0.41709810495376587,
+            0.06375786662101746
+          ],
+          "bbox_diagonal": 0.5952709466229532,
+          "centroid": [
+            0.017432937802416046,
+            0.001960713559172605,
+            0.5182721079400014
+          ],
+          "bbox_center": [
+            0.018380001187324524,
+            0.001436576247215271,
+            0.5171967297792435
+          ]
+        },
+        "after_topology": {
+          "component_count": 1,
+          "component_face_counts": [
+            8064
+          ],
+          "watertight": true,
+          "winding_consistent": true,
+          "signed_volume": 0.0029594850166734746,
+          "boundary_edge_count": 0,
+          "nonmanifold_edge_count": 0,
+          "face_normals_finite": true,
+          "vertex_normals_finite": true,
+          "mean_face_normal_length": 1.0,
+          "mean_vertex_normal_length": 1.0
+        },
+        "actions": [
+          "merged_duplicate_vertices",
+          "removed_degenerate_faces",
+          "removed_duplicate_faces",
+          "removed_unreferenced_vertices"
+        ],
+        "removed_components": [],
+        "winding_fixed": false,
+        "inverted": false
+      },
+      "alignment": {
+        "original": {
+          "vertex_count": 4032,
+          "face_count": 8064,
+          "bounds": {
+            "min": [
+              -0.19156737625598907,
+              -0.20711247622966766,
+              0.48531779646873474
+            ],
+            "max": [
+              0.22832737863063812,
+              0.2099856287240982,
+              0.5490756630897522
+            ]
+          },
+          "extents": [
+            0.4198947548866272,
+            0.41709810495376587,
+            0.06375786662101746
+          ],
+          "bbox_diagonal": 0.5952709466229532,
+          "centroid": [
+            0.017432937802416046,
+            0.001960713559172605,
+            0.5182721079400014
+          ],
+          "bbox_center": [
+            0.018380001187324524,
+            0.001436576247215271,
+            0.5171967297792435
+          ]
+        },
+        "alpha_wrapped": {
+          "vertex_count": 475,
+          "face_count": 946,
+          "bounds": {
+            "min": [
+              -0.192405591,
+              -0.207996953,
+              0.484488649
+            ],
+            "max": [
+              0.22909523,
+              0.210793023,
+              0.549968531
+            ]
+          },
+          "extents": [
+            0.42150082099999997,
+            0.418789976,
+            0.06547988199999999
+          ],
+          "bbox_diagonal": 0.5977755440367969,
+          "centroid": [
+            0.01759202846458371,
+            0.0017185886363302308,
+            0.5173647339215546
+          ],
+          "bbox_center": [
+            0.018344819500000012,
+            0.001398034999999992,
+            0.51722859
+          ]
+        },
+        "centroid_difference": [
+          -0.00015909066216766507,
+          0.00024212492284237438,
+          0.0009073740184468715
+        ],
+        "centroid_difference_norm": 0.0009525029797343395,
+        "bbox_center_difference": [
+          3.518168732451199e-05,
+          3.854124721527907e-05,
+          -3.186022075651884e-05
+        ],
+        "bbox_center_difference_norm": 6.114125061333877e-05,
+        "bbox_center_error_fraction": 0.0001022812847117331,
+        "approximate_scale_ratio": 0.9958101373687354,
+        "per_axis_extent_ratio": [
+          0.9961896489084827,
+          0.9959600966040454,
+          0.973701611450941
+        ],
+        "coordinate_systems_appear_aligned": true,
+        "warnings": []
+      }
+    },
+    {
+      "original_fbx_object_name": "part_1",
+      "mesh_data_name": "part_1",
+      "parent_name": null,
+      "material_names": [],
+      "canonical_part_name": "teapot_body",
+      "match_method": "numeric_index",
+      "exported_ply_path": "input/original_parts_ply/part_1_Teapot_Body_original.ply",
+      "matched_alpha_wrapped_mesh_path": "input/alpha_wrapping_per_part/part_1_Teapot_Body_wrapped.obj",
+      "source_fbx": {
+        "vertex_count": 35529,
+        "polygon_count": 71066,
+        "evaluated_vertex_count": 35529,
+        "evaluated_triangle_count": 71066,
+        "non_triangular_faces_before_export": 0,
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            4.371138828673793e-08,
+            0.0
+          ],
+          [
+            0.0,
+            -4.371138828673793e-08,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "matrix_world_determinant": 1.0,
+        "world_bounds": {
+          "min": [
+            -0.38024646043777466,
+            -0.3812888264656067,
+            -6.214284803718328e-05
+          ],
+          "max": [
+            0.39008402824401855,
+            0.3845403790473938,
+            0.4973513185977936
+          ]
+        }
+      },
+      "exported_mesh": {
+        "vertex_count": 35529,
+        "face_count": 71066,
+        "bounds": {
+          "min": [
+            -0.38024646043777466,
+            -0.3812888264656067,
+            -6.212748121470213e-05
+          ],
+          "max": [
+            0.39008402824401855,
+            0.3845403492450714,
+            0.4973512887954712
+          ]
+        },
+        "extents": [
+          0.7703304886817932,
+          0.7658291757106781,
+          0.4974134162766859
+        ],
+        "bbox_diagonal": 1.1947064471469426,
+        "centroid": [
+          0.006833697099029003,
+          0.00033994371697692785,
+          0.19182462714010962
+        ],
+        "bbox_center": [
+          0.004918783903121948,
+          0.0016257613897323608,
+          0.24864458065712824
+        ]
+      },
+      "topology_and_normals": {
+        "component_count": 1,
+        "component_face_counts": [
+          71066
+        ],
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume": 0.012546370568508292,
+        "boundary_edge_count": 0,
+        "nonmanifold_edge_count": 0,
+        "face_normals_finite": true,
+        "vertex_normals_finite": true,
+        "mean_face_normal_length": 1.0,
+        "mean_vertex_normal_length": 1.0
+      },
+      "cleanup": {
+        "before": {
+          "vertex_count": 35529,
+          "face_count": 71066,
+          "bounds": {
+            "min": [
+              -0.38024646043777466,
+              -0.3812888264656067,
+              -6.212748121470213e-05
+            ],
+            "max": [
+              0.39008402824401855,
+              0.3845403492450714,
+              0.4973512887954712
+            ]
+          },
+          "extents": [
+            0.7703304886817932,
+            0.7658291757106781,
+            0.4974134162766859
+          ],
+          "bbox_diagonal": 1.1947064471469426,
+          "centroid": [
+            0.006833697099029003,
+            0.00033994371697692785,
+            0.19182462714010962
+          ],
+          "bbox_center": [
+            0.004918783903121948,
+            0.0016257613897323608,
+            0.24864458065712824
+          ]
+        },
+        "before_component_count": 1,
+        "after": {
+          "vertex_count": 35529,
+          "face_count": 71066,
+          "bounds": {
+            "min": [
+              -0.38024646043777466,
+              -0.3812888264656067,
+              -6.212748121470213e-05
+            ],
+            "max": [
+              0.39008402824401855,
+              0.3845403492450714,
+              0.4973512887954712
+            ]
+          },
+          "extents": [
+            0.7703304886817932,
+            0.7658291757106781,
+            0.4974134162766859
+          ],
+          "bbox_diagonal": 1.1947064471469426,
+          "centroid": [
+            0.006833697099029003,
+            0.00033994371697692785,
+            0.19182462714010962
+          ],
+          "bbox_center": [
+            0.004918783903121948,
+            0.0016257613897323608,
+            0.24864458065712824
+          ]
+        },
+        "after_topology": {
+          "component_count": 1,
+          "component_face_counts": [
+            71066
+          ],
+          "watertight": true,
+          "winding_consistent": true,
+          "signed_volume": 0.012546370568508292,
+          "boundary_edge_count": 0,
+          "nonmanifold_edge_count": 0,
+          "face_normals_finite": true,
+          "vertex_normals_finite": true,
+          "mean_face_normal_length": 1.0,
+          "mean_vertex_normal_length": 1.0
+        },
+        "actions": [
+          "merged_duplicate_vertices",
+          "removed_degenerate_faces",
+          "removed_duplicate_faces",
+          "removed_unreferenced_vertices"
+        ],
+        "removed_components": [],
+        "winding_fixed": false,
+        "inverted": false
+      },
+      "alignment": {
+        "original": {
+          "vertex_count": 35529,
+          "face_count": 71066,
+          "bounds": {
+            "min": [
+              -0.38024646043777466,
+              -0.3812888264656067,
+              -6.212748121470213e-05
+            ],
+            "max": [
+              0.39008402824401855,
+              0.3845403492450714,
+              0.4973512887954712
+            ]
+          },
+          "extents": [
+            0.7703304886817932,
+            0.7658291757106781,
+            0.4974134162766859
+          ],
+          "bbox_diagonal": 1.1947064471469426,
+          "centroid": [
+            0.006833697099029003,
+            0.00033994371697692785,
+            0.19182462714010962
+          ],
+          "bbox_center": [
+            0.004918783903121948,
+            0.0016257613897323608,
+            0.24864458065712824
+          ]
+        },
+        "alpha_wrapped": {
+          "vertex_count": 761,
+          "face_count": 1518,
+          "bounds": {
+            "min": [
+              -0.382037173,
+              -0.382897916,
+              -0.00180053003
+            ],
+            "max": [
+              0.391177859,
+              0.386073193,
+              0.499135147
+            ]
+          },
+          "extents": [
+            0.773215032,
+            0.768971109,
+            0.50093567703
+          ],
+          "bbox_diagonal": 1.2000477510119985,
+          "centroid": [
+            0.009406998354594994,
+            -4.651828469635553e-05,
+            0.21331368993231994
+          ],
+          "bbox_center": [
+            0.0045703430000000045,
+            0.0015876384999999882,
+            0.248667308485
+          ]
+        },
+        "centroid_difference": [
+          -0.002573301255565991,
+          0.0003864620016732834,
+          -0.02148906279221033
+        ],
+        "centroid_difference_norm": 0.021646040097860697,
+        "bbox_center_difference": [
+          0.00034844090312194376,
+          3.8122889732372656e-05,
+          -2.2727827871743544e-05
+        ],
+        "bbox_center_difference_norm": 0.0003512562765983692,
+        "bbox_center_error_fraction": 0.00029270191648803583,
+        "approximate_scale_ratio": 0.9955490905586453,
+        "per_axis_extent_ratio": [
+          0.9962694163992835,
+          0.9959141074969542,
+          0.9929686366636986
+        ],
+        "coordinate_systems_appear_aligned": true,
+        "warnings": []
+      }
+    },
+    {
+      "original_fbx_object_name": "part_2",
+      "mesh_data_name": "part_2",
+      "parent_name": null,
+      "material_names": [],
+      "canonical_part_name": "knob",
+      "match_method": "numeric_index",
+      "exported_ply_path": "input/original_parts_ply/part_2_Knob_original.ply",
+      "matched_alpha_wrapped_mesh_path": "input/alpha_wrapping_per_part/part_2_Knob_wrapped.obj",
+      "source_fbx": {
+        "vertex_count": 1002,
+        "polygon_count": 2000,
+        "evaluated_vertex_count": 1002,
+        "evaluated_triangle_count": 2000,
+        "non_triangular_faces_before_export": 0,
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            4.371138828673793e-08,
+            0.0
+          ],
+          [
+            0.0,
+            -4.371138828673793e-08,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "matrix_world_determinant": 1.0,
+        "world_bounds": {
+          "min": [
+            -0.03507750481367111,
+            -0.05613213777542114,
+            0.5359507203102112
+          ],
+          "max": [
+            0.08063019067049026,
+            0.05871963873505592,
+            0.6539914011955261
+          ]
+        }
+      },
+      "exported_mesh": {
+        "vertex_count": 1002,
+        "face_count": 2000,
+        "bounds": {
+          "min": [
+            -0.03507750481367111,
+            -0.056132130324840546,
+            0.5359507203102112
+          ],
+          "max": [
+            0.08063019067049026,
+            0.05871963873505592,
+            0.6539914011955261
+          ]
+        },
+        "extents": [
+          0.11570769548416138,
+          0.11485176905989647,
+          0.11804068088531494
+        ],
+        "bbox_diagonal": 0.2012779222724439,
+        "centroid": [
+          0.02249837774545915,
+          0.0012502807072937146,
+          0.6031260896993522
+        ],
+        "bbox_center": [
+          0.022776342928409576,
+          0.001293754205107689,
+          0.5949710607528687
+        ]
+      },
+      "topology_and_normals": {
+        "component_count": 1,
+        "component_face_counts": [
+          2000
+        ],
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume": 0.0006050765461717735,
+        "boundary_edge_count": 0,
+        "nonmanifold_edge_count": 0,
+        "face_normals_finite": true,
+        "vertex_normals_finite": true,
+        "mean_face_normal_length": 1.0,
+        "mean_vertex_normal_length": 1.0
+      },
+      "cleanup": {
+        "before": {
+          "vertex_count": 1002,
+          "face_count": 2000,
+          "bounds": {
+            "min": [
+              -0.03507750481367111,
+              -0.056132130324840546,
+              0.5359507203102112
+            ],
+            "max": [
+              0.08063019067049026,
+              0.05871963873505592,
+              0.6539914011955261
+            ]
+          },
+          "extents": [
+            0.11570769548416138,
+            0.11485176905989647,
+            0.11804068088531494
+          ],
+          "bbox_diagonal": 0.2012779222724439,
+          "centroid": [
+            0.02249837774545915,
+            0.0012502807072937146,
+            0.6031260896993522
+          ],
+          "bbox_center": [
+            0.022776342928409576,
+            0.001293754205107689,
+            0.5949710607528687
+          ]
+        },
+        "before_component_count": 1,
+        "after": {
+          "vertex_count": 1002,
+          "face_count": 2000,
+          "bounds": {
+            "min": [
+              -0.03507750481367111,
+              -0.056132130324840546,
+              0.5359507203102112
+            ],
+            "max": [
+              0.08063019067049026,
+              0.05871963873505592,
+              0.6539914011955261
+            ]
+          },
+          "extents": [
+            0.11570769548416138,
+            0.11485176905989647,
+            0.11804068088531494
+          ],
+          "bbox_diagonal": 0.2012779222724439,
+          "centroid": [
+            0.02249837774545915,
+            0.0012502807072937146,
+            0.6031260896993522
+          ],
+          "bbox_center": [
+            0.022776342928409576,
+            0.001293754205107689,
+            0.5949710607528687
+          ]
+        },
+        "after_topology": {
+          "component_count": 1,
+          "component_face_counts": [
+            2000
+          ],
+          "watertight": true,
+          "winding_consistent": true,
+          "signed_volume": 0.0006050765461717735,
+          "boundary_edge_count": 0,
+          "nonmanifold_edge_count": 0,
+          "face_normals_finite": true,
+          "vertex_normals_finite": true,
+          "mean_face_normal_length": 1.0,
+          "mean_vertex_normal_length": 1.0
+        },
+        "actions": [
+          "merged_duplicate_vertices",
+          "removed_degenerate_faces",
+          "removed_duplicate_faces",
+          "removed_unreferenced_vertices"
+        ],
+        "removed_components": [],
+        "winding_fixed": false,
+        "inverted": false
+      },
+      "alignment": {
+        "original": {
+          "vertex_count": 1002,
+          "face_count": 2000,
+          "bounds": {
+            "min": [
+              -0.03507750481367111,
+              -0.056132130324840546,
+              0.5359507203102112
+            ],
+            "max": [
+              0.08063019067049026,
+              0.05871963873505592,
+              0.6539914011955261
+            ]
+          },
+          "extents": [
+            0.11570769548416138,
+            0.11485176905989647,
+            0.11804068088531494
+          ],
+          "bbox_diagonal": 0.2012779222724439,
+          "centroid": [
+            0.02249837774545915,
+            0.0012502807072937146,
+            0.6031260896993522
+          ],
+          "bbox_center": [
+            0.022776342928409576,
+            0.001293754205107689,
+            0.5949710607528687
+          ]
+        },
+        "alpha_wrapped": {
+          "vertex_count": 574,
+          "face_count": 1144,
+          "bounds": {
+            "min": [
+              -0.0353794189,
+              -0.0564340156,
+              0.53565244
+            ],
+            "max": [
+              0.0809154452,
+              0.0589432249,
+              0.654292378
+            ]
+          },
+          "extents": [
+            0.1162948641,
+            0.1153772405,
+            0.11863993799999994
+          ],
+          "bbox_diagonal": 0.2022667494426015,
+          "centroid": [
+            0.022533410003811014,
+            0.001310257280819941,
+            0.6019909725725344
+          ],
+          "bbox_center": [
+            0.022768013150000002,
+            0.0012546046500000012,
+            0.5949724089999999
+          ]
+        },
+        "centroid_difference": [
+          -3.503225835186502e-05,
+          -5.997657352622651e-05,
+          0.0011351171268177973
+        ],
+        "centroid_difference_norm": 0.0011372402297194159,
+        "bbox_center_difference": [
+          8.329778409574273e-06,
+          3.914955510768772e-05,
+          -1.348247131272018e-06
+        ],
+        "bbox_center_difference_norm": 4.004860351884283e-05,
+        "bbox_center_error_fraction": 0.00019799894757396925,
+        "approximate_scale_ratio": 0.9951112717592853,
+        "per_axis_extent_ratio": [
+          0.9949510357109689,
+          0.9954456230897328,
+          0.9949489427861552
+        ],
+        "coordinate_systems_appear_aligned": true,
+        "warnings": []
+      }
+    },
+    {
+      "original_fbx_object_name": "part_3",
+      "mesh_data_name": "part_3",
+      "parent_name": null,
+      "material_names": [],
+      "canonical_part_name": "handle",
+      "match_method": "numeric_index",
+      "exported_ply_path": "input/original_parts_ply/part_3_Handle_original.ply",
+      "matched_alpha_wrapped_mesh_path": "input/alpha_wrapping_per_part/part_3_Handle_wrapped.obj",
+      "source_fbx": {
+        "vertex_count": 4805,
+        "polygon_count": 9610,
+        "evaluated_vertex_count": 4805,
+        "evaluated_triangle_count": 9610,
+        "non_triangular_faces_before_export": 0,
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            4.371138828673793e-08,
+            0.0
+          ],
+          [
+            0.0,
+            -4.371138828673793e-08,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "matrix_world_determinant": 1.0,
+        "world_bounds": {
+          "min": [
+            -0.567600667476654,
+            -0.04396995157003403,
+            0.07964156568050385
+          ],
+          "max": [
+            -0.20716500282287598,
+            0.046642255038022995,
+            0.6807579398155212
+          ]
+        }
+      },
+      "exported_mesh": {
+        "vertex_count": 4805,
+        "face_count": 9610,
+        "bounds": {
+          "min": [
+            -0.567600667476654,
+            -0.04396994784474373,
+            0.07964156568050385
+          ],
+          "max": [
+            -0.20716500282287598,
+            0.046642232686281204,
+            0.6807579398155212
+          ]
+        },
+        "extents": [
+          0.3604356646537781,
+          0.09061218053102493,
+          0.6011163741350174
+        ],
+        "bbox_diagonal": 0.7067286118930152,
+        "centroid": [
+          -0.43016638021489984,
+          0.0007201464319825089,
+          0.4195787092465393
+        ],
+        "bbox_center": [
+          -0.387382835149765,
+          0.0013361424207687378,
+          0.38019975274801254
+        ]
+      },
+      "topology_and_normals": {
+        "component_count": 1,
+        "component_face_counts": [
+          9610
+        ],
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume": 0.000699969442689935,
+        "boundary_edge_count": 0,
+        "nonmanifold_edge_count": 0,
+        "face_normals_finite": true,
+        "vertex_normals_finite": true,
+        "mean_face_normal_length": 1.0,
+        "mean_vertex_normal_length": 1.0
+      },
+      "cleanup": {
+        "before": {
+          "vertex_count": 4805,
+          "face_count": 9610,
+          "bounds": {
+            "min": [
+              -0.567600667476654,
+              -0.04396994784474373,
+              0.07964156568050385
+            ],
+            "max": [
+              -0.20716500282287598,
+              0.046642232686281204,
+              0.6807579398155212
+            ]
+          },
+          "extents": [
+            0.3604356646537781,
+            0.09061218053102493,
+            0.6011163741350174
+          ],
+          "bbox_diagonal": 0.7067286118930152,
+          "centroid": [
+            -0.43016638021489984,
+            0.0007201464319825089,
+            0.4195787092465393
+          ],
+          "bbox_center": [
+            -0.387382835149765,
+            0.0013361424207687378,
+            0.38019975274801254
+          ]
+        },
+        "before_component_count": 1,
+        "after": {
+          "vertex_count": 4805,
+          "face_count": 9610,
+          "bounds": {
+            "min": [
+              -0.567600667476654,
+              -0.04396994784474373,
+              0.07964156568050385
+            ],
+            "max": [
+              -0.20716500282287598,
+              0.046642232686281204,
+              0.6807579398155212
+            ]
+          },
+          "extents": [
+            0.3604356646537781,
+            0.09061218053102493,
+            0.6011163741350174
+          ],
+          "bbox_diagonal": 0.7067286118930152,
+          "centroid": [
+            -0.43016638021489984,
+            0.0007201464319825089,
+            0.4195787092465393
+          ],
+          "bbox_center": [
+            -0.387382835149765,
+            0.0013361424207687378,
+            0.38019975274801254
+          ]
+        },
+        "after_topology": {
+          "component_count": 1,
+          "component_face_counts": [
+            9610
+          ],
+          "watertight": true,
+          "winding_consistent": true,
+          "signed_volume": 0.000699969442689935,
+          "boundary_edge_count": 0,
+          "nonmanifold_edge_count": 0,
+          "face_normals_finite": true,
+          "vertex_normals_finite": true,
+          "mean_face_normal_length": 1.0,
+          "mean_vertex_normal_length": 1.0
+        },
+        "actions": [
+          "merged_duplicate_vertices",
+          "removed_degenerate_faces",
+          "removed_duplicate_faces",
+          "removed_unreferenced_vertices"
+        ],
+        "removed_components": [],
+        "winding_fixed": false,
+        "inverted": false
+      },
+      "alignment": {
+        "original": {
+          "vertex_count": 4805,
+          "face_count": 9610,
+          "bounds": {
+            "min": [
+              -0.567600667476654,
+              -0.04396994784474373,
+              0.07964156568050385
+            ],
+            "max": [
+              -0.20716500282287598,
+              0.046642232686281204,
+              0.6807579398155212
+            ]
+          },
+          "extents": [
+            0.3604356646537781,
+            0.09061218053102493,
+            0.6011163741350174
+          ],
+          "bbox_diagonal": 0.7067286118930152,
+          "centroid": [
+            -0.43016638021489984,
+            0.0007201464319825089,
+            0.4195787092465393
+          ],
+          "bbox_center": [
+            -0.387382835149765,
+            0.0013361424207687378,
+            0.38019975274801254
+          ]
+        },
+        "alpha_wrapped": {
+          "vertex_count": 524,
+          "face_count": 1044,
+          "bounds": {
+            "min": [
+              -0.568660661,
+              -0.0449877684,
+              0.0785817628
+            ],
+            "max": [
+              -0.206112183,
+              0.0474045145,
+              0.681815694
+            ]
+          },
+          "extents": [
+            0.362548478,
+            0.09239228290000001,
+            0.6032339312
+          ],
+          "bbox_diagonal": 0.7098372409155471,
+          "centroid": [
+            -0.4233135364062992,
+            0.0005914829857584426,
+            0.4148006062370924
+          ],
+          "bbox_center": [
+            -0.387386422,
+            0.0012083730499999994,
+            0.38019872839999996
+          ]
+        },
+        "centroid_difference": [
+          -0.006852843808600628,
+          0.00012866344622406627,
+          0.004778103009446866
+        ],
+        "centroid_difference_norm": 0.008355135601314644,
+        "bbox_center_difference": [
+          3.5868502349933884e-06,
+          0.00012776937076873843,
+          1.0243480125793347e-06
+        ],
+        "bbox_center_difference_norm": 0.00012782381190567935,
+        "bbox_center_error_fraction": 0.00018007481791292376,
+        "approximate_scale_ratio": 0.9956206453488937,
+        "per_axis_extent_ratio": [
+          0.9941723287382772,
+          0.9807332137154599,
+          0.996489658562856
+        ],
+        "coordinate_systems_appear_aligned": true,
+        "warnings": []
+      }
+    },
+    {
+      "original_fbx_object_name": "part_4",
+      "mesh_data_name": "part_4",
+      "parent_name": null,
+      "material_names": [],
+      "canonical_part_name": "spout",
+      "match_method": "numeric_index",
+      "exported_ply_path": "input/original_parts_ply/part_4_Spout_original.ply",
+      "matched_alpha_wrapped_mesh_path": "input/alpha_wrapping_per_part/part_4_Spout_wrapped.obj",
+      "source_fbx": {
+        "vertex_count": 3433,
+        "polygon_count": 6862,
+        "evaluated_vertex_count": 3433,
+        "evaluated_triangle_count": 6862,
+        "non_triangular_faces_before_export": 0,
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            4.371138828673793e-08,
+            0.0
+          ],
+          [
+            0.0,
+            -4.371138828673793e-08,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "matrix_world_determinant": 1.0,
+        "world_bounds": {
+          "min": [
+            0.3589589595794678,
+            -0.09344574064016342,
+            0.07815033197402954
+          ],
+          "max": [
+            0.589367151260376,
+            0.09217839688062668,
+            0.5463165044784546
+          ]
+        }
+      },
+      "exported_mesh": {
+        "vertex_count": 3433,
+        "face_count": 6862,
+        "bounds": {
+          "min": [
+            0.3589589595794678,
+            -0.09344573318958282,
+            0.07815033942461014
+          ],
+          "max": [
+            0.589367151260376,
+            0.09217838197946548,
+            0.5463165044784546
+          ]
+        },
+        "extents": [
+          0.2304081916809082,
+          0.1856241151690483,
+          0.46816616505384445
+        ],
+        "bbox_diagonal": 0.5538265116687552,
+        "centroid": [
+          0.46179900702820953,
+          0.000496649913705698,
+          0.27989027529726607
+        ],
+        "bbox_center": [
+          0.4741630554199219,
+          -0.00063367560505867,
+          0.31223342195153236
+        ]
+      },
+      "topology_and_normals": {
+        "component_count": 1,
+        "component_face_counts": [
+          6862
+        ],
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume": 0.0009761157747151707,
+        "boundary_edge_count": 0,
+        "nonmanifold_edge_count": 0,
+        "face_normals_finite": true,
+        "vertex_normals_finite": true,
+        "mean_face_normal_length": 1.0,
+        "mean_vertex_normal_length": 1.0
+      },
+      "cleanup": {
+        "before": {
+          "vertex_count": 3433,
+          "face_count": 6862,
+          "bounds": {
+            "min": [
+              0.3589589595794678,
+              -0.09344573318958282,
+              0.07815033942461014
+            ],
+            "max": [
+              0.589367151260376,
+              0.09217838197946548,
+              0.5463165044784546
+            ]
+          },
+          "extents": [
+            0.2304081916809082,
+            0.1856241151690483,
+            0.46816616505384445
+          ],
+          "bbox_diagonal": 0.5538265116687552,
+          "centroid": [
+            0.46179900702820953,
+            0.000496649913705698,
+            0.27989027529726607
+          ],
+          "bbox_center": [
+            0.4741630554199219,
+            -0.00063367560505867,
+            0.31223342195153236
+          ]
+        },
+        "before_component_count": 1,
+        "after": {
+          "vertex_count": 3433,
+          "face_count": 6862,
+          "bounds": {
+            "min": [
+              0.3589589595794678,
+              -0.09344573318958282,
+              0.07815033942461014
+            ],
+            "max": [
+              0.589367151260376,
+              0.09217838197946548,
+              0.5463165044784546
+            ]
+          },
+          "extents": [
+            0.2304081916809082,
+            0.1856241151690483,
+            0.46816616505384445
+          ],
+          "bbox_diagonal": 0.5538265116687552,
+          "centroid": [
+            0.46179900702820953,
+            0.000496649913705698,
+            0.27989027529726607
+          ],
+          "bbox_center": [
+            0.4741630554199219,
+            -0.00063367560505867,
+            0.31223342195153236
+          ]
+        },
+        "after_topology": {
+          "component_count": 1,
+          "component_face_counts": [
+            6862
+          ],
+          "watertight": true,
+          "winding_consistent": true,
+          "signed_volume": 0.0009761157747151707,
+          "boundary_edge_count": 0,
+          "nonmanifold_edge_count": 0,
+          "face_normals_finite": true,
+          "vertex_normals_finite": true,
+          "mean_face_normal_length": 1.0,
+          "mean_vertex_normal_length": 1.0
+        },
+        "actions": [
+          "merged_duplicate_vertices",
+          "removed_degenerate_faces",
+          "removed_duplicate_faces",
+          "removed_unreferenced_vertices"
+        ],
+        "removed_components": [],
+        "winding_fixed": false,
+        "inverted": false
+      },
+      "alignment": {
+        "original": {
+          "vertex_count": 3433,
+          "face_count": 6862,
+          "bounds": {
+            "min": [
+              0.3589589595794678,
+              -0.09344573318958282,
+              0.07815033942461014
+            ],
+            "max": [
+              0.589367151260376,
+              0.09217838197946548,
+              0.5463165044784546
+            ]
+          },
+          "extents": [
+            0.2304081916809082,
+            0.1856241151690483,
+            0.46816616505384445
+          ],
+          "bbox_diagonal": 0.5538265116687552,
+          "centroid": [
+            0.46179900702820953,
+            0.000496649913705698,
+            0.27989027529726607
+          ],
+          "bbox_center": [
+            0.4741630554199219,
+            -0.00063367560505867,
+            0.31223342195153236
+          ]
+        },
+        "alpha_wrapped": {
+          "vertex_count": 476,
+          "face_count": 948,
+          "bounds": {
+            "min": [
+              0.358131036,
+              -0.0942568436,
+              0.0776100172
+            ],
+            "max": [
+              0.590120761,
+              0.0929260699,
+              0.546982141
+            ]
+          },
+          "extents": [
+            0.23198972499999998,
+            0.1871829135,
+            0.4693721238
+          ],
+          "bbox_diagonal": 0.5560277566924574,
+          "centroid": [
+            0.4511852264015442,
+            0.00023661963476635483,
+            0.2725102172824758
+          ],
+          "bbox_center": [
+            0.4741258985,
+            -0.0006653868499999979,
+            0.3122960791
+          ]
+        },
+        "centroid_difference": [
+          0.010613780626665348,
+          0.00026003027893934316,
+          0.007380058014790247
+        ],
+        "centroid_difference_norm": 0.012930012035516893,
+        "bbox_center_difference": [
+          3.715691992189907e-05,
+          3.1711244941327876e-05,
+          -6.265714846764858e-05
+        ],
+        "bbox_center_difference_norm": 7.944909066759839e-05,
+        "bbox_center_error_fraction": 0.00014288691474721146,
+        "approximate_scale_ratio": 0.9960411238518084,
+        "per_axis_extent_ratio": [
+          0.9931827441103619,
+          0.9916723257384725,
+          0.997430697979266
+        ],
+        "coordinate_systems_appear_aligned": true,
+        "warnings": []
+      }
+    }
+  ]
+}

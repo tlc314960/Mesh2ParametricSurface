@@ -1,0 +1,27 @@
+{
+  "fbx_path": "input/TeportParts.fbx",
+  "alpha_wrap_directory": "input/alpha_wrapping_per_part",
+  "output_directory": "input/original_parts_ply",
+  "blender_executable": "/Applications/Blender.app/Contents/MacOS/Blender",
+  "scene_unit_system": "METRIC",
+  "scene_unit_scale_length": 1.0,
+  "scene_object_count": 5,
+  "mesh_object_count": 5,
+  "ignored_non_mesh_object_count": 0,
+  "ignored_non_mesh_objects": [],
+  "parts_exported": 5,
+  "exported_files": [
+    "input/original_parts_ply/part_0_Lid_original.ply",
+    "input/original_parts_ply/part_1_Teapot_Body_original.ply",
+    "input/original_parts_ply/part_2_Knob_original.ply",
+    "input/original_parts_ply/part_3_Handle_original.ply",
+    "input/original_parts_ply/part_4_Spout_original.ply"
+  ],
+  "all_matched_parts_aligned": true,
+  "global_transform_correction": null,
+  "global_transform_note": "No correction applied. Blender FBX world coordinates already align with the alpha-wrapped meshes; object transforms were baked per object.",
+  "component_filter_face_ratio": 0.0,
+  "warnings": [],
+  "part_mapping_path": "input/original_parts_ply/part_mapping.json",
+  "debug_alignment_path": "input/original_parts_ply/debug_alignment.png"
+}

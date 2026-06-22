@@ -128,6 +128,27 @@ uv pip install --python .venv/bin/python -r requirements.txt
 `--proxy-type` 可选 `auto` / `generalized_cylinder` / `revolve`；`auto` 将
 `body/lid/knob → revolve`，`spout/handle → generalized_cylinder`。
 
+## 原始 AI 网格分件预处理
+
+详细外表面使用原始 AI 生成网格，而不是 alpha-wrap 网格。两类数据职责不同：
+
+- `input/alpha_wrapping_per_part/`：仅用于拟合平滑参数化代理。
+- `input/TeportParts.fbx`：保留视觉细节，预处理后供后续外表面采样。
+
+使用 Blender 正确解析 FBX 层级和物体变换，并导出逐零件 PLY：
+
+```bash
+.venv/bin/python scripts/preprocess_original_fbx_parts.py \
+    --fbx input/TeportParts.fbx \
+    --alpha-dir input/alpha_wrapping_per_part \
+    --output input/original_parts_ply
+```
+
+输出包括 `part_*_original.ply`、`part_mapping.json`、
+`preprocess_summary.json` 和 `debug_alignment.png`。该步骤只做保守清理、
+三角化、法向检查和坐标对齐诊断，不做平滑、简化、alpha-wrap 或外层提取。
+技术细节见 [`docs/original_parts_preprocess.md`](docs/original_parts_preprocess.md)。
+
 ## 交互式可视化
 
 `notebooks/visualize_spout_proxy.ipynb`（plotly）。设置 `PART` 切换零件查看单零件细节，
@@ -173,6 +194,7 @@ src/
 scripts/
   fit_spout_proxy.py     单零件拟合 CLI (--proxy-type)
   run_all_parts.py       全零件批处理 + summary.json
+  preprocess_original_fbx_parts.py  原始 FBX 分件与对齐诊断
 notebooks/
   visualize_spout_proxy.ipynb  plotly 交互可视化
 ```

@@ -9,6 +9,7 @@
 | [swept_tube.md](swept_tube.md) | 扫掠管（generalized cylinder）算法与自适应半径门控 |
 | [revolve_surface.md](revolve_surface.md) | 旋转面（surface of revolution）轴估计与母线拟合 |
 | [params_and_results.md](params_and_results.md) | 参数总表、`params.json` 字段、评估指标、当前结果 |
+| [original_parts_preprocess.md](original_parts_preprocess.md) | 原始 AI FBX 分件、PLY 导出与 alpha-wrap 对齐诊断 |
 
 ## 核心结论速查
 
